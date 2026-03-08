@@ -235,7 +235,7 @@ def collect_youtube():
 def build_header():
     _w = ["월", "화", "수", "목", "금", "토", "일"]
     _t = datetime.now(KST)
-    _d = f"{_t.strftime('%m-%d')}({_w[_t.weekday()]})"
+    _d = f"{_t.strftime('%m-%d')} ({_w[_t.weekday()]})"
     blocks = [
         {"type": "header", "text": {"type": "plain_text", "text": f"자동차 뉴스 & 트렌드 리포트 | {_d}"}},
         {"type": "divider"},
