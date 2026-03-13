@@ -2,8 +2,8 @@ name: Car News Tracker
 
 on:
   schedule:
-    # 매일 오전 9:30 KST (= 0:30 UTC)
-    - cron: '30 0 * * *'
+    # 매일 오전 9:30 KST 목표 (5h 딜레이 보정)
+    - cron: '30 19 * * *'
   workflow_dispatch:
 
 permissions:
